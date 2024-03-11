@@ -1,0 +1,9 @@
+version: '3.8' # Use whatever version is appropriate
+services:
+  nuclio-dashboard:
+    image: nuclio/dashboard:stable-amd64
+    ports:
+      - "8070:8070"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
